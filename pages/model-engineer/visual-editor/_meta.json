@@ -1,0 +1,6 @@
+{
+  "geometry-node": "Geometry node",
+  "neural-net-node": "Neural network node",
+  "equation-node": "Equation node",
+  "constraint-node": "Constraint node"
+}

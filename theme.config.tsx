@@ -1,18 +1,16 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import Image from "next/image";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <Image src="/img/simlai-logo.png" width={120} height={20} alt="" />,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/DimensionLab/simlai-docs",
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/DimensionLab/simlai-docs",
   footer: {
-    text: 'Nextra Docs Template',
+    text: "SIML.ai Docs",
   },
-}
+};
 
-export default config
+export default config;

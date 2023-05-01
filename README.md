@@ -1,23 +1,13 @@
-# Nextra Docs Template 
+# SIML.ai platform documentation
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+SIML.ai is a software platform for AI Engineering, providing a set of tools to easily create, train and deploy powerful high-performance AI-based physics simulators (also called surrogate models). SIML.ai Model Engineer automates access to powerful GPU-based cloud servers and easy-to-use AI inferencing and 3D visualization pipelines.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+To learn more about physics-informed neural network and how to combine them with complex physics and custom partial differential equations, take a look at documentation:
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+[docs.siml.ai](https://docs.siml.ai)
 
 ## Local Development
 
-First, run `pnpm i` to install the dependencies.
+First, run `npm i` to install the dependencies.
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+Then, run `npm dev` to start the development server and visit http://localhost:3000.

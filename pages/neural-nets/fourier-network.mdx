@@ -1,0 +1,28 @@
+# Fourier Network
+
+Neural networks are generally biased toward low-frequency solutions, a phenomenon that is known as "spectral bias". 
+This can adversely affect the training convergence as well as the accuracy of the model. One approach to alleviate 
+this issue is to perform input encoding, that is, to transform the inputs to a higher dimensional feature space 
+via high-frequency functions. This is done using the Fourier networks, which takes the following form:
+
+<div style={{ textAlign: "center", marginTop: "30px" }}>$$u_{net}(\mathbf{x};\mathbf{\theta}) = \mathbf{W}_n \big \{\phi_{n-1} \circ \phi_{n-2} \circ \cdots \circ \phi_1 \circ \phi_E \big \} (\mathbf{x}) + \mathbf{b}_n,  \; \; \; \; \phi_{i}(\mathbf{x}_i) = \sigma \left( \mathbf{W}_i \mathbf{x}_i + \mathbf{b}_i \right),$$</div>
+
+where $u_{net}(\mathbf{x};\mathbf{\theta})$ is the approximate solution, $\mathbf{x} \in \mathbb{R}^{d_0}$ is the 
+input to network, $\phi_{i} \in \mathbb{R}^{d_i}$ is the $i^{th}$ layer of the network, $\mathbf{W}_i \in \mathbb{R}^{d_i \times d_{i-1}}, \mathbf{b}_i \in \mathbb{R}^{d_i}$
+are the weight and bias of the $i^{th}$ layer, $\mathbf{\theta}$ denotes the set of network's trainable parameters, i.e., 
+$\mathbf{\theta} = \{\mathbf{W}_1, \mathbf{b}_1, \cdots, \mathbf{b}_n, \mathbf{W}_n\}$, $n$ is the number of layers, and 
+$\sigma$ is the activation function. $\phi_E$ is an input encoding layer, and by setting that to identity function, 
+we arrive at the standard feed-forward fully-connected architecture. The input encoding layer in SIML.ai is a variation 
+of the one proposed in <sup>[1](#ref-1)</sup> with trainable encoding, and takes the following form
+
+<div style={{ textAlign: "center", marginTop: "30px" }}>$$\phi_E = \big[ \sin \left( 2\pi \mathbf{f} \times \mathbf{x} \right); \cos \left( 2\pi \mathbf{f} \times\mathbf{x} \right) \big]^T,$$</div>
+
+where $\mathbf{f} \in \mathbb{R}^{n_f \times d_0}$ is the trainable frequency matrix and $n_f$ is the number of frequency sets.
+
+In the case of parameterized examples, it is also possible to apply encoding to the parameters in addition to the spatial inputs. In fact, it has been observed that applying encoding to the parametric inputs in addition to the spatial inputs will improve the accuracy and the training convergence of the model. Note that Modulus Sym applies the input encoding to the spatial and parametric inputs in a fully decoupled setting and then concatenates the spatial/temporal and parametric Fourier features together.
+
+---
+
+References:
+
+- <div id="ref-1">[1] Tancik, Matthew, et al. ["Fourier features let networks learn high frequency functions in low dimensional domains."](https://arxiv.org/abs/2006.10739) Advances in Neural Information Processing Systems 33 (2020): 7537-7547.</div>
