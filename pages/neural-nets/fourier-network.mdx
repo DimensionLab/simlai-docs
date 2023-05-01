@@ -19,7 +19,11 @@ of the one proposed in <sup>[1](#ref-1)</sup> with trainable encoding, and takes
 
 where $\mathbf{f} \in \mathbb{R}^{n_f \times d_0}$ is the trainable frequency matrix and $n_f$ is the number of frequency sets.
 
-In the case of parameterized examples, it is also possible to apply encoding to the parameters in addition to the spatial inputs. In fact, it has been observed that applying encoding to the parametric inputs in addition to the spatial inputs will improve the accuracy and the training convergence of the model. Note that Modulus Sym applies the input encoding to the spatial and parametric inputs in a fully decoupled setting and then concatenates the spatial/temporal and parametric Fourier features together.
+In the case of parameterized examples, it is also possible to apply encoding to the parameters in addition to the spatial 
+inputs. In fact, it has been observed that applying encoding to the parametric inputs in addition to the spatial 
+inputs will improve the accuracy and the training convergence of the model. Note that Modulus module inside SIML.ai applies 
+the input encoding to the spatial and parametric inputs in a fully decoupled setting and then concatenates 
+the spatial/temporal and parametric Fourier features together.
 
 ---
 
