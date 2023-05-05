@@ -1,23 +1,41 @@
 # Fourier Network
 
 Neural networks sometimes have a preference for low-frequency solutions, an issue called "spectral bias."
-This can negatively impact how well the model learns during training and the accuracy of the 
-final model. To help with this problem, we can use a technique called **input encoding**. This means transforming the inputs 
+This can negatively impact how well the model learns during training and the accuracy of the
+final model. To help with this problem, we can use a technique called **input encoding**. This means transforming the inputs
 into a higher dimensional feature space through high-frequency functions. Fourier networks are a great way to do this!
+
+These networks have shown a significant improvement in results over the regular fully connected neural networks due to their **ability to capture sharp gradients**.
 
 The input encoding layer in SIML.ai is a variation of the one proposed in <sup>[1](#ref-1)</sup>, but adds a twist with trainable encoding,
 which makes it even more powerful!
 
-For some more complex examples, we can also apply encoding to other parameters besides the inputs themselves. 
-This can make the model even more accurate and help it learn faster. The Modulus module in SIML.ai takes care of 
-applying input encoding to both the inputs and the other parameters in a fully decoupled setting and then concatenates 
+You don't need to worry about making any special adjustments to the geometry and constraints when you're tweaking 
+the neural network structures. The best part is that the architecture doesn't depend on the specific problem or 
+the parameters you're working with, so you can apply it to a wide variety of situations without any extra hassle. 
+
+> Here's a quick tip about frequencies: __They play a significant role in these networks__. You have the freedom to pick 
+frequencies from various options (`full`/`axis`/`gaussian`/`diagonal`) and decide how many frequencies you want to use
+within that spectrum. The perfect number of frequencies will vary for each problem, so it's important to find the 
+right balance between better accuracy and the extra computing effort that comes with additional Fourier features. 
+For example, the default settings work well for CFD simulations of laminar flows. However, for the turbulent flows, 
+you might want to increase the number of frequencies to 30-40.
+
+For some more complex examples, we can also apply encoding to other parameters besides the inputs themselves.
+This can make the model even more accurate and help it learn faster. The Modulus module in SIML.ai takes care of
+applying input encoding to both the inputs and the other parameters in a fully decoupled setting and then concatenates
 the spatial/temporal and parametric Fourier features together.
 
-So, in a nutshell, Fourier networks and input encoding can help neural networks overcome their preference for low-frequency solutions, 
+So, in a nutshell, Fourier networks and input encoding can help neural networks overcome their preference for low-frequency solutions,
 leading to better learning and more accurate models.
 
 ---
 
 References:
 
-- <div id="ref-1">[1] Tancik, Matthew, et al. ["Fourier features let networks learn high frequency functions in low dimensional domains."](https://arxiv.org/abs/2006.10739) Advances in Neural Information Processing Systems 33 (2020): 7537-7547.</div>
+1. <div id="ref-1">
+     Tancik, Matthew, et al. ["Fourier features let networks learn high
+     frequency functions in low dimensional
+     domains."](https://arxiv.org/abs/2006.10739) Advances in Neural Information
+     Processing Systems 33 (2020): 7537-7547.
+   </div>
