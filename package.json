@@ -1,7 +1,7 @@
 {
   "name": "@dimensionlab/simlai-docs",
   "version": "1.0.0",
-  "description": "SIML.ai Documentation",
+  "description": "Siml.ai Documentation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

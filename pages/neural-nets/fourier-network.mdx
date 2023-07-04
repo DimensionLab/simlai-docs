@@ -7,7 +7,7 @@ into a higher dimensional feature space through high-frequency functions. Fourie
 
 These networks have shown a significant improvement in results over the regular fully connected neural networks due to their **ability to capture sharp gradients**.
 
-The input encoding layer in SIML.ai is a variation of the one proposed in <sup>[1](#ref-1)</sup>, but adds a twist with trainable encoding,
+The input encoding layer in Siml.ai is a variation of the one proposed in <sup>[1](#ref-1)</sup>, but adds a twist with trainable encoding,
 which makes it even more powerful!
 
 You don't need to worry about making any special adjustments to the geometry and constraints when you're tweaking 
@@ -22,7 +22,7 @@ For example, the default settings work well for CFD simulations of laminar flows
 you might want to increase the number of frequencies to 30-40.
 
 For some more complex examples, we can also apply encoding to other parameters besides the inputs themselves.
-This can make the model even more accurate and help it learn faster. The Modulus module in SIML.ai takes care of
+This can make the model even more accurate and help it learn faster. The Modulus module in Siml.ai takes care of
 applying input encoding to both the inputs and the other parameters in a fully decoupled setting and then concatenates
 the spatial/temporal and parametric Fourier features together.
 
