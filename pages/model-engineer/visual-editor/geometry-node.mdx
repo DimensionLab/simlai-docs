@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 # Geometry node
 
-SIML.ai provides both physics-informed and data-driven machine learning solutions for physics simulation problems. 
+Siml.ai provides both physics-informed and data-driven machine learning solutions for physics simulation problems. 
 All these solutions depend on expressing the physics problem as a mathematical optimization problem. 
 The mathematical optimization problem is, in turn, posed on a particular geometry and/or set of data. 
 
-Geometry node in SIML.ai Model Engineer visual editor lets users import an existing geometry from a CAD file or STL mesh. 
+Geometry node in Siml.ai Model Engineer visual editor lets users import an existing geometry from a CAD file or STL mesh. 
 
 <Image
     src="/img/geometry-node.png"
@@ -21,8 +21,8 @@ Geometry node in SIML.ai Model Engineer visual editor lets users import an exist
 
 When a geometry is imported, it is automatically converted to STL mesh for training purposes (Tesselation module will 
 sample points specified by `Batch size` of the constraint node connected to the specific geometry node). But not just that - 
-it's also converted to an isosurface for SIML.ai Simulation Studio to use in physics simulations, and to a fast, web-based 
-representation for smooth, interactive rendering in geometry viewer inside SIML.ai Model Engineer:
+it's also converted to an isosurface for Siml.ai Simulation Studio to use in physics simulations, and to a fast, web-based 
+representation for smooth, interactive rendering in geometry viewer inside Siml.ai Model Engineer:
 
 <Image
     src="/img/aneurysm-geometry.png"
@@ -35,5 +35,5 @@ representation for smooth, interactive rendering in geometry viewer inside SIML.
     Figure 2.: Geometry viewer in Model Engineer visual editor
 </figcaption>
 
-TODO: For data-driven problems, SIML.ai Model Engineer will provide multiple methods for accessing data, 
+For data-driven problems, next version of Siml.ai Model Engineer will provide multiple methods for accessing data, 
 including standard in-memory datasets as well as lazy loading methods for large-scale datasets.

@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/DimensionLab/simlai-docs",
   footer: {
-    text: "SIML.ai Docs",
+    text: "Siml.ai Docs",
   },
 };
 
