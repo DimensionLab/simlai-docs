@@ -23,7 +23,7 @@ const config: DocsThemeConfig = {
     return (
       <>
         <meta property="og:url" content={url} />
-        <meta property="og:title" content={frontMatter.title || 'Siml.ai Docs'} />
+        <meta property="og:title" content={frontMatter.title || 'Siml.ai Documentation'} />
         <meta
           property="og:description"
           content={frontMatter.description || 'Siml.ai is a software platform for AI Engineering, providing a set of tools to easily create, train and deploy powerful high-performance AI-based physics simulators.'}
@@ -33,7 +33,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/DimensionLab/simlai-docs",
   footer: {
-    text: "Siml.ai Docs",
+    text: "Siml.ai Documentation",
   },
   banner: {
     key: 'v0.3-release',
