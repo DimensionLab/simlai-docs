@@ -10,7 +10,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: '%s – Siml.ai Docs'
+      titleTemplate: '%s – Siml.ai Documentation'
     }
   },
   head: () => {
