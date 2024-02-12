@@ -36,10 +36,10 @@ const config: DocsThemeConfig = {
     text: "Siml.ai Documentation",
   },
   banner: {
-    key: 'v0.3-release',
+    key: 'v0.5-release',
     text: (
-      <a href="https://www.siml.ai/blog/siml-ai-v0-3-released-custom-equations-and-plugins" target="_blank">
-        🎉 Siml.ai v0.3 is released with the support for custom equations. Read more →
+      <a href="https://www.siml.ai/blog/enter-siml-ai-v0-5" target="_blank">
+        🎉 Siml.ai v0.5 is released with new features and enhancements. Read more →
       </a>
     )
   }
