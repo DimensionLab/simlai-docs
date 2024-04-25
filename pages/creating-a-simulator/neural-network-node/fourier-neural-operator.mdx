@@ -1,0 +1,29 @@
+# Fourier Neural Operator
+
+Traditional Partial Differential Equations (PDE) solvers, such as finite element methods (FEM) and finite difference methods (FDM), depend on discretizing the space into a mesh. This imposes a trade-off on resolution: coarse grids offer speed but less accuracy, while fine grids provide accuracy but are slow. Solving complex systems of PDEs, which model real-life physical phenomena, often requires very fine discretization. This task is challenging and time-consuming for traditional solvers.
+
+However, data-driven methods can directly learn the trajectory of the family of equations from the data. Consequently, learning-based methods can be significantly faster than traditional solvers..
+
+A recent line of work has proposed the learning of mesh-free, infinite-dimensional operators using neural networks.<sup>[1](#ref-1)</sup> The neural operator addresses the mesh-dependent nature of finite-dimensional operator methods. It accomplishes this by producing a single set of network parameters applicable to various discretizations. Importantly, the neural operator does not require knowledge of the underlying PDE, only data.
+
+The Fourier Neural Operator (FNO) is a unique, data-driven deep learning architecture. It can learn mappings between infinite-dimensional spaces of functions. Its key feature, known as **spectral convolutions**, involves operations that function in the Fourier space with an integral kernel.
+
+> Operator learning can be taken as an image-to-image problem. The Fourier layer can be viewed as a substitute for the convolution layer.<sup>[2](#ref-2)</sup>
+
+
+![Fourier Neural operator](/img/fourier-neural-operator-architecture.png)
+
+<figcaption
+  style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}
+>
+  Source: [NVIDIA Docs](https://docs.nvidia.com/deeplearning/modulus/modulus-sym/user_guide/neural_operators/darcy_fno.html#problem-description)
+</figcaption>
+
+The inputs and outputs of PDEs are continuous functions. It is more efficient to represent them in Fourier space and do global convolution. Then, for the Fourier layer, we can use the fast Fourier transform (FFT). Activation functions will then be applied on the spatial domain. They help to recover the Higher frequency modes and non-periodic boundary which are left out in the Fourier layers. Therefore it's necessary to the Fourier transform and its inverse at each layer.<sup>[2](#ref-2)</sup>
+
+---
+
+References:
+
+1. <div id="ref-1">[Neural Ordinary Differential Equations (article)](https://arxiv.org/abs/1806.07366)</div>
+2. <div id="ref-2">[Fourier Neural Operator - blogpost by co-creator, Zongyi Li](https://zongyi-li.github.io/blog/2020/fourier-pde/)</div>

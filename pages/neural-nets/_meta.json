@@ -1,7 +1,0 @@
-{
-  "fully-connected-mlp": "Fully-connected Network",
-  "fourier-network": "Fourier Network",
-  "modified-fourier-neural-network": "Modified Fourier Neural Network",
-  "fourier-neural-operator": "Fourier Neural Operator",
-  "siren": "Sinusoidal Representation Network (SiReN)"
-}

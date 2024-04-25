@@ -1,0 +1,23 @@
+# Sinusoidal Representation Network
+
+Current network architectures for implicit neural representations struggle to model signals with fine detail. They also fail to represent a signal's spatial and temporal derivatives, which are crucial for many physical signals implicitly defined as the solution to partial differential equations.
+
+Implicit neural representations using periodic activation functions like Sin, known as sinusoidal representation networks or SIREN, are well-suited for representing complex natural signals and their derivatives. SIRENs can be used to solve challenging boundary value problems, such as the Poisson equation, and Helmholtz and wave equations. This network bears similarities to Fourier networks because using a Sin activation function is equivalent to the input encoding for the network's first layer.
+
+The [authors of the Siren pape](https://www.vincentsitzmann.com/siren/)r use this type of network to demonstrate its capabilities by solving the inhomogeneous Helmholtz equation. In contrast, architectures based on ReLU and Tanh fail to converge to a solution.
+
+<div style={{marginTop: "1rem"}}>
+    <video width="100%" playsInline={true} autoPlay={true} loop={true} preload="true" muted={true}>
+        <source src="/img/helmholtz_convergence_video_pad_label.mp4" type="video/mp4" />
+    </video>
+</div>
+
+In the time domain, Siren successfully solves the wave equation, whereas a Tanh-based architecture fails to find the correct solution.
+
+<div style={{marginTop: "1rem"}}>
+    <video width="100%" playsInline={true} autoPlay={true} loop={true} preload="true" muted={true}>
+        <source src="/img/wave_combined_pad_label.mp4" type="video/mp4" />
+    </video>
+</div>
+
+Each Sin activation input follows a Gaussian normal distribution, and each Sin activation output follows an arcSin distribution. This maintains the distribution of activations, allowing for the effective construction and training of deep architectures.

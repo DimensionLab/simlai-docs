@@ -1,0 +1,61 @@
+import Image from "next/image";
+
+# Equation Node
+
+The Equation Node is a versatile feature that aids in the mathematical modelling of various physical phenomena. It offers a predefined library of standard equations used in physics. These equations range from basic operations such as the dot product, curl, and gradient, to more complex equations used in fluid dynamics, wave theory, elasticity, and electromagnetic theory.
+
+<Image
+    src="/img/equation-node.png"
+    alt="Equation node in Model Engineer visual editor"
+    width={300}
+    height={20}
+    style={{ margin: "auto" }}
+/>
+<figcaption style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}>
+    Figure 1.: Equation node in Model Engineer visual editor
+</figcaption>
+
+### **Supported equations**
+
+We currently support the following equations:
+
+- Basic equations like dot, curl, normal gradient of a scalar
+- Navier-Stokes equations for fluid flow
+- Zero equation turbulence model
+- Advection-diffusion equation
+- Diffusion equation
+- Wave equation
+- Helmoltz equation
+- Linear elasticity equations
+- Linear elasticity plane stress equations
+- Frequency domain Maxwell's equation
+- Sommerfeld radiation condition
+- Perfect Electric Conductor boundary condition
+
+The current set of equations is quite comprehensive, addressing many common use-cases in physics modelling. However, the team is actively working on expanding this library to include more equations. In addition, Siml allows users to input their own custom equations, further enhancing the flexibility and utility of the Equation Node.
+
+### **Check equations represented as LaTeX**
+
+When clicking on the *fx* button (Fig. 2) the equations for each exposed component is displayed in the pop-up in LaTeX format (Fig. 3)
+
+<Image
+    src="/img/equation-node-latex.png"
+    alt="Icon on the equation node acting as a button that triggers popup with equations in LaTeX format."
+    width={400}
+    height={20}
+    style={{ margin: "auto" }}
+/>
+<figcaption style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}>
+    Figure 3.: Icon on the equation node acting as a button that triggers popup with equations in LaTeX format.
+</figcaption>
+
+<Image
+    src="/img/equation-latex.png"
+    alt="LaTeX representation of every exposed component of the equation."
+    width={450}
+    height={20}
+    style={{ margin: "auto" }}
+/>
+<figcaption style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}>
+    Figure 3.: LaTeX representation of every exposed component of the equation (Navier-Stoke equation in this case).
+</figcaption>
