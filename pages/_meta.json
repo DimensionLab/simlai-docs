@@ -1,9 +1,9 @@
 {
-  "index": "Introduction",
-  "concepts": "Concepts",
-  "neural-nets": "Neural networks",
-  "model-engineer": "Siml.ai Model Engineer",
-  "simulation-studio": "Siml.ai Simulation Studio",
+  "index": "Overview",
+  "introduction": "Introduction",
+  "creating-a-simulator": "Creating a Simulator",
+  "simulator-training": "Simulator Training",
+  "running-a-simulation": "Running a Simulation",
   "about": {
     "title": "About",
     "type": "page"

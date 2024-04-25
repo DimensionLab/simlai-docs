@@ -1,0 +1,18 @@
+# Modified Fourier Neural Network
+
+Fourier Neural Networks are highly effective for dealing with problems characterized by sudden changes or interfaces between different materials. These networks often encounter difficulties when training physics-informed neural networks due to sharp gradients. However, a modified version can significantly enhance their performance.
+
+This modified version, inspired by a technique in a [paper by Wang et. al.](#ref-1), includes two transformation layers that project Fourier features into a new learned feature space. These transformed features then update the hidden layers through element-wise multiplication, mirroring the original technique in <sup>[1](#ref-1)</sup>.
+
+This architecture modification has been shown to improve both training convergence and accuracy. However, it's worth noting that this could slightly increase the training time per iteration.
+
+---
+
+References:
+
+1. <div id="ref-1">
+     Wang, Sifan, Yujun Teng, and Paris Perdikaris. ["Understanding and
+     mitigating gradient flow pathologies in physics-informed neural
+     networks."](https://arxiv.org/abs/2001.04536)" SIAM Journal on Scientific
+     Computing 43.5 (2021): A3055-A3081.
+   </div>

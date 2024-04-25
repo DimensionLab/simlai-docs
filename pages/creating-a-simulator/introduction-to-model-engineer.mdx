@@ -1,0 +1,46 @@
+import Image from "next/image";
+
+# Introduction to Model Engineer
+
+[Siml.ai](http://siml.ai/)'s Model Engineer is a visual tool designed for creating and optimizing general-purpose learnable simulators. These simulators, which use deep learning techniques, can simulate fluid flows, multiphase flows, mechanical deformation, solid-fluid interaction, and more. Our goal is to simplify the process of building these simulators through a powerful visual editor, making it straightforward and understandable.
+
+The Model Engineer consists of three components:
+
+1. **Geometry Viewer -** Geometry viewer is a fast, web-based representation for smooth, interactive rendering of the geometry uploaded in the visual editor. It provides an immediate, accurate visualization of the model's geometry, helping users to better understand the spatial structure and relationships within their model. The interactive nature of the Geometry Viewer allows users to explore different perspectives and views of their model, which can facilitate better design decisions and potential improvements.
+
+![Geometry viewer](/img/simlai-geometry-viewer.png)
+
+<figcaption
+  style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}
+>
+  Figure 1.: Geometry viewer
+</figcaption>
+
+2. **No-code, visual simulator editor -** The visual editor is based on a node-based graph, where each node represents a specific operation. There are 5 types of nodes that user can drag-and-drop into the visual editor and use to build a simulator model:
+   1. Geometry Node
+   2. Neural Network Node
+   3. Equation Node
+   4. Constraint Node
+   5. Dataset Node
+
+> More information about what hese nodes represent can be found under the [Getting started](/creating-a-simulator/getting-started/) section, or going through individual sections about each node accessible from the left menu.
+
+![Node-based simulator editor](/img/simlai-visual-ui.png)
+
+<figcaption
+  style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}
+>
+  Figure 2.: Node-based simulator editor
+</figcaption>
+
+3. **Configuration -** Customize the specifications for training the simulator within the editor with our Configuration tab:
+
+![Simulator configuration for training](/img/simulator-settings.png)
+
+<figcaption
+  style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}
+>
+  Figure 3.: Simulator configuration for training
+</figcaption>
+
+> For learning about each of the available settings, you can read about how they're connected to the Modulus Symbolic configuration for training on NVIDIA's documentation [here](https://docs.nvidia.com/deeplearning/modulus/modulus-sym/user_guide/features/configuration.html#training).

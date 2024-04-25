@@ -1,0 +1,31 @@
+import Image from 'next/image';
+
+# Simulator Training
+
+Users can leverage our Infrastructure-as-a-Service feature, **Environments**, part of the [Siml.ai](http://siml.ai/) platform. With a single click, you can begin training AI-based physics simulators on servers equipped with one or multiple GPUs. Our software can manage server nodes with hundreds of GPUs.
+
+![Simulator training in the cloud with Siml.ai Model Engineer](/img/environment-detail-page.png)
+<figcaption style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}>
+    Figure 1.: Simulator training in the cloud on GPU-based servers, deployed through our Environments.
+</figcaption>
+
+Training a simulator created in the model engineer is straightforward with a few simple steps on the platform:
+
+1. Navigate to "Train Simulator" on the left panel.
+2. Click on "Create Environment", fill out the specifications, or select from the existing environment list.
+3. Choose the simulator you want to train, deploy the server or start it, then click on "Train".
+4. The simulator is trained using the Simulator Inference Training Environment (SITE), which is optimized for NVIDIA GPUs and uses the NVIDIA Modulus framework for model creation and training.
+5. Monitor the training process. We offer comprehensive monitoring for hardware utilization, infrastructure usage, and training progress.
+
+<Image
+    src="/img/simulators-latest-activity.png"
+    alt="Latest activity"
+    width={500}
+    height={20}
+    style={{ margin: "auto", marginTop: "15px" }}
+/>
+<figcaption style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}>
+    Figure 2.: Latest activity displayed in the Overview page.
+</figcaption>
+
+6. Finally, the trained models can be used in Simulation Studio, a 3D interface for high-fidelity, interactive visualizations of running numerical simulations. More on this is discussed in the nect section.

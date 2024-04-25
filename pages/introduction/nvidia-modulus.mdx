@@ -1,0 +1,14 @@
+# NVIDIA Modulus
+
+The core framework behind Siml.ai is the [NVIDIA Modulus](https://docs.nvidia.com/modulus/index.html), which is a powerful framework that merges physics and artificial intelligence to create models capable of producing high-fidelity simulations of complex physics phenomena. The technology allows researchers and developers to synthesize, learn, and validate mode of the reality in a virtual environment, orders of magnitude faster than traditional CFD/FEA tools.
+
+![Source: NVIDIA Website](/img/nvidia-modulus.png)
+<figcaption style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}>
+    Source: NVIDIA [Website](https://developer.nvidia.com/modulus)
+</figcaption>
+
+[Siml.ai](http://siml.ai/) uses NVIDIA Modulus to train and deploy powerful physics-informed neural network models. These models, once trained, are used to approximate physics, fit experimental data from physical processes, or combine them to build hybrid physics + data surrogate models.
+
+One of the tools provided in the [Siml.ai](http://siml.ai/) platform is the Simulator Inference & Training Environment (SITE), which is optimized for NVIDIA GPUs. This environment has integrated the NVIDIA Modulus framework for creating and training PINNs, training and inference pipelines optimized by [DimensionLab](https://www.dimensionlab.org/)'s team of engineers, high-performance rendering, and real-time hardware usage monitoring, all in a cloud-agnostic, Dockerized setup.
+
+The key advantage of this approach is that the AI-based simulators need to be trained only once. The actual numerical simulation is computed during the inference of the model. This greatly reduces the computational resources required, as physics doesn't have to be computed each time a simulation is run. Instead, the actual computations are handled by the trained models, leading to large efficiency benefits and a significant reduction in the time needed for the computations.

@@ -1,0 +1,22 @@
+import Image from 'next/image';
+
+# Geometry Node
+
+[Siml.ai](http://siml.ai/) offers both physics-informed and data-driven machine learning solutions for physics simulation issues. These solutions rely on representing the physics problem as a mathematical optimization problem, which is then applied to a specific geometry and/or data set.
+
+Geometry node in Model Engineer visual editor lets users import an existing geometry from a CAD file or STL mesh.
+
+<Image
+  src="/img/geometry-node.png"
+  alt="Geometry Node"
+  width={400}
+  height={400}
+  style={{ margin: "auto", marginTop: "15px" }}
+/>
+<figcaption
+  style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}
+>
+  Figure 1.: Geometry node
+</figcaption>
+
+When a geometry is imported, it is automatically converted into an STL mesh for training purposes. This is done through the Tesselation module, which samples points specified by the `Batch size` of the constraint node connected to the specific geometry node. But that's not all. The geometry is also converted into an isosurface for use in physics simulations within the [Siml.ai](http://siml.ai/) Simulation Studio and rendered in the Geometry viewer within [Siml.ai](http://siml.ai/) Model Engineer for a smooth interactive view of the complete geometry.

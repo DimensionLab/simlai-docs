@@ -1,0 +1,20 @@
+import Image from 'next/image';
+
+# Fully Connected Network
+
+The default neural network architecture in [Siml.ai](http://siml.ai/)'s visual editor is a fully connected multi-layer perceptron (MLP). "Fully connected" implies that each neuron in every layer of the neural network applies a linear transformation to the input vector through a weights matrix. As a result, all possible layer-to-layer connections are present, allowing every input of the input vector to influence every output of the output vector.
+
+<Image
+  src="/img/neural-net.png"
+  alt="Neural network architecture"
+  width={400}
+  height={300}
+  style={{ margin: "auto", marginTop: "15px" }}
+/>
+<figcaption
+  style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}
+>
+  Source: [NVIDIA Docs](https://docs.nvidia.com/deeplearning/performance/dl-performance-fully-connected/index.html)
+</figcaption>
+
+The pre-selected fully-connected neural network (MLP) architecture in the [Neural network node](/creating-a-simulator/neural-network-node/node-overview) of [Siml.ai](http://siml.ai/)'s visual editor has six layers. Each layer contains 512 perceptrons and uses the "swish" (also known as SiLU) activation function. These parameters, such as the number of layers, the number of perceptrons in each layer, and the activation function for each layer, are adjustable by the user. The default values are known to work well, but they may not be optimal for your specific problem.

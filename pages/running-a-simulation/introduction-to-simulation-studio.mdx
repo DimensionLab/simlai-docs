@@ -1,0 +1,20 @@
+import Image from "next/image";
+
+# Introduction to Simulation Studio
+
+[Siml.ai](http://Siml.ai)'s Simulation Studio is a web-based, 3D interface for high-fidelity, interactive visualizations of simulation outputs. It is used for extremely fast analysis for engineering and scientific problems, leveraging trained and optimized **neural physics simulation models**. Since the simulations are computed by doing an inference on these models, the time it takes to compute one timestep even of highly irregular simulation domain is in seconds or possibly milliseconds, resulting in near-real-time simulation and visualization of physical phenomena.
+
+<Image
+  src="/img/simlai-simulation-studio-interaction.gif"
+  alt="Siml.ai Simulation Studio animation"
+  width={1400}
+  height={200}
+  style={{ margin: "auto", marginTop: "15px"}}
+/>
+<figcaption
+  style={{ textAlign: "center", fontSize: "0.7rem", marginBottom: "1rem" }}
+>
+  Figure 1.: Showcase of various rendering capabilities.
+</figcaption>
+
+Simulation Studio utilizes Unreal Engine for high-fidelity visualization rendering, which is then streamed through Pixel Streaming from the cloud to the frontend application.
