@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 const config: DocsThemeConfig = {
   logo: <Image src="/img/siml-logo-white-gradient.png" width={120} height={20} alt="" />,
   project: {
-    link: "https://github.com/DimensionLab/simlai-docs",
+    link: "https://github.com/DimensionLab/simlai-docs/tree/main",
   },
   useNextSeoProps() {
     return {
@@ -31,7 +31,7 @@ const config: DocsThemeConfig = {
       </>
     )
   },
-  docsRepositoryBase: "https://github.com/DimensionLab/simlai-docs",
+  docsRepositoryBase: "https://github.com/DimensionLab/simlai-docs/tree/main",
   footer: {
     text: "Siml.ai Documentation",
   },
