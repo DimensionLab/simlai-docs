@@ -4,6 +4,7 @@
   "description": "Siml.ai Documentation",
   "scripts": {
     "dev": "next dev",
+    "dev:https": "next dev --experimental-https",
     "build": "next build",
     "start": "next start"
   },
