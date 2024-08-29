@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://docs.siml.ai</loc><lastmod>2024-08-29T19:40:58.742Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/about</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/constraint-node</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/dataset-node</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/equation-node</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/geometry-node</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/getting-started</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/introduction-to-model-engineer</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/neural-network-node/fourier-network</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/neural-network-node/fourier-neural-operator</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/neural-network-node/fully-connected-network</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/neural-network-node/modified-fourier-neural-network</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/neural-network-node/node-overview</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/creating-a-simulator/neural-network-node/sinusoidal-representation-network</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/introduction/nvidia-modulus</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/introduction/physics-informed-neural-networks</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/running-a-simulation/creating-a-project</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/running-a-simulation/introduction-to-simulation-studio</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/running-a-simulation/ready-set-simulate</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://docs.siml.ai/simulator-training</loc><lastmod>2024-08-29T19:40:58.743Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

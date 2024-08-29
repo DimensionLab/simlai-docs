@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://docs.siml.ai
+
+# Sitemaps
+Sitemap: https://docs.siml.ai/sitemap.xml
